@@ -6,7 +6,7 @@
 - Her seyden once JWT authentication olduğu için token almak lazım. onun endpoint şudur:
 ```bash
   http://127.0.0.1:8000/api/token/
-```bash
+```
 - varsayılan olarak username = 'admin' ve password='1234' olan bir admin superuser mevcuttur
 - roller (id ve açılımları bunlar ): 1 ->Admin; 2 -> Accountant; 3 -> Worker
 - onu kullanıp token almak gerekiyor

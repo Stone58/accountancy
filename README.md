@@ -1,6 +1,8 @@
 ## CONTEXT
 To provide some background on this project, I was given a 5-day challenge. While I am proficient in Python and have experience with libraries like Pandas, Numpy, Matplotlib, Scikit-learn, etc., and have developed Python applications using Flask, the challenge was to complete the app within the given timeframe using Django framework. Despite not having prior knowledge of how the Django framework works, considering my workload and responsibilities, I successfully learned, comprehended, and built the Django app in just 2 days. The application encompasses various modules, including the database, models, tests, API endpoints, and documentation.
 
+## TECHNOLOGIES USED : Python, Django Framework, 
+
 ## TASK:
 For the task related to this project, please check the "Python_challenge_1_django.pdf" file.
 

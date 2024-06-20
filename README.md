@@ -1,4 +1,4 @@
-## UPDATE
+## CONTEXT
 To provide some background on this project, I was given a 5-day challenge. While I am proficient in Python and have experience with libraries like Pandas, Numpy, Matplotlib, Scikit-learn, etc., and have developed Python applications using Flask, the challenge was to complete the app within the given timeframe using Django framework. Despite not having prior knowledge of how the Django framework works, considering my workload and responsibilities, I successfully learned, comprehended, and built the Django app in just 2 days. The application encompasses various modules, including the database, models, tests, API endpoints, and documentation.
 
 ## TASK:
@@ -42,43 +42,3 @@ python manage.py test
 ### Regarding Changes in Tables:
 - Consider adding an additional field to track who last modified a piece of data. This could be beneficial for auditing and accountability purposes.
 
-
-# ===================== Turkish =====================
-
-## Kodlama ile ilgili
-- Kodlama için ingilizce kullandım . dolaysıyla takstaki tablolar şuna çevirdim: Firmalar -> company ; işlemler -> operation;
-- o tablolar dışında başka tablolar mevcut: işlemler türü -> operationType; kullanıcı -> user
-
-## Projeyi nasıl test edilir: 
-- Her seyden once JWT authentication olduğu için token almak lazım. onun endpoint şudur:
-```bash
-  http://127.0.0.1:8000/api/token/
-```
-- varsayılan olarak username = 'admin' ve password='1234' olan bir admin superuser mevcuttur
-- roller (id ve açılımları bunlar ): 1 ->Admin; 2 -> Accountant; 3 -> Worker
-- onu kullanıp token almak gerekiyor
-- işlemler oluşturmak için önce kullanıcılar, işlem türü, firma oluşturmak lazım
-
-## Automatik test için: 
-```bash
-python manage.py test
-```
-
-## Proje çalıştırmaları
-- Proje windows bir ortamda gelistirdim ve onun icin bir bat dosyayi hazirladim oradan ortam ve 'python' path değişkenine göre düzeleyip çalıştırılabilir (ya da tek tek)
-
-## Proje Geliştirmeleri ve Sorular
-
-### Kalan sorular:
-- Şu an muhasebeciler veya yöneticiler işlem oluşturabilir mi?
-- İşlemleri düzenlemek mümkün mü, yoksa silme ve tekrar oluşturma tek seçenek mi?
-- Tarih manuel olarak girilebilir mi, yoksa yalnızca sistem zamanına dayalı mıdır?
-
-### Yetki Yönetimini Geliştirmek:
-- Mevcut task spesifikasyonlara göre, ve zaman kisilti olmasindan dolayi grup özelliklerini kullanarak yetkilendirmeyi uygulandi. Daha optimize bir yaklaşım, her yöntem için özel izinler oluşturup bunları gruplarla ilişkilendirmek olabilir mi? Bu, daha esnek bir yapı sağlayabilir.
-
-### Detaylı Testler:
-- CRUD işlemleri şu an için yönetici rolü kullanılarak doğru bir şekilde çalışıyor gibi görünse de, farklı kullanıcı rollerini kapsayacak daha detaylı test vakaları geliştirilebilir.
-
-### tablolardaki Değişiklik hakkinda:
-- Bir veriyi en son kimin değiştirdiğini izleyen ek bir alan eklemeyi düşünülebilir. Bu, denetim ve hesap verebilirlik için faydalı olabilir.
